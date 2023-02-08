@@ -8,6 +8,13 @@ Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 * [Upload mit CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
 * [Upload mit FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-fme)
 
+
+## Hinweise
+* Es werden nur Dateien mit der Endung «.xtf» akzeptiert.
+* Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft.
+*Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt.
+ 
+
 Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
 
 ## Manueller Upload
@@ -37,3 +44,4 @@ Eine Datei kann in FME mit einem «HTTPCaller» hochgeladen werden. Dazu können
 bild 1
 
 Beim Pfad auf die hochzuladende Datei muss der «MIME-Type» «application/octet-stream» augewählt werden.
+
