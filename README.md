@@ -12,15 +12,15 @@ Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 ## Hinweise
 * Es werden nur Dateien mit der Endung «.xtf» akzeptiert.
 * Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft.
-*Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt.
+* Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt.
  
 
 Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
 
 ## Manueller Upload
 
-1. Mit Benutzername und Passwort auf der Geodatenschnittstelle anmelden
-2. Datei per Drag&Drop hochladen oder durch Klick in das Fenster auswählen
+1. Mit Benutzername und Passwort auf der Geodatenschnittstelle anmelden.
+2. Datei per Drag&Drop hochladen oder durch Klick in das Fenster auswählen.
 3. In der Benutzeroberfläche sind alle bereits hochgeladenen Dateien sichtbar und können bei Bedarf auch gelöscht werden.
 
 ## Upload mit CURL
