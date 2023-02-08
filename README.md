@@ -4,9 +4,11 @@ Das Bundesamt für Energie (BFE) betreibt die Geodatenschnittstelle. Über die G
 Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 
-* [Manueller Upload](https://s)
-* [Upload mit CURL](https://s)
-* [Upload mit FME](https://s)
+* [Manueller Upload](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
+* [Upload mit CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
+* [Upload mit FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-fme)
+
+Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
 
 ## Manueller Upload
 
