@@ -41,7 +41,7 @@ Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestel
 ## Upload mit FME
 Eine Datei kann in FME mit einem «HTTPCaller» hochgeladen werden. Dazu können folgende Einstellungen verwendet werden:
 
-bild 1
+![FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/Geodatenschnittstelle_FME.png "Upload mit FME")
 
 Beim Pfad auf die hochzuladende Datei muss der «MIME-Type» «application/octet-stream» augewählt werden.
 
