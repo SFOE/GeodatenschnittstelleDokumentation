@@ -1,4 +1,7 @@
 # Dokumentation Geodatenschnittstelle BFE
+[![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR)
+[![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT)
+
 Das Bundesamt für Energie (BFE) betreibt die Geodatenschnittstelle. Über die Geodatenschnittstelle können dem BFE Geodaten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden.
 
 Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
