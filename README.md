@@ -26,8 +26,10 @@ Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE
 2. Datei per Drag&Drop hochladen oder durch Klick in das Fenster auswählen.
 3. In der Benutzeroberfläche sind alle bereits hochgeladenen Dateien sichtbar und können bei Bedarf auch gelöscht werden.
 
+
 ## Upload mit CURL
 
+Die Geodaten können mit CURL über einen Befehl in der Kommandzeile hochgeladen werden. Weitere Informationen zu CURL finden Sie [hier](https://curl.se/).
 Eine Datei kann mit folgendem CURL-Befehl hochgeladen werden:
  ```
 curl 
@@ -39,12 +41,21 @@ curl
 -v 
 -k
 ```
+
+Folgende Zeilen müssen angepasst werden:
+* --header: Den persönlichen Basic Token einsetzen. Zum Beispiel: *"Authorization: Basic asajdhfkshjdjkfasdfaeghwf"*
+* --form: Pfad auf die hochzuladende Datei. Zum Beispiel file=@D:\users\daten\geodaten_bfe.xtf
+* -x: Proxyeinstellungen
+
 Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestellt.
 
 ## Upload mit FME
 Eine Datei kann in FME mit einem «HTTPCaller» hochgeladen werden. Dazu können folgende Einstellungen verwendet werden:
 
-![FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/Geodatenschnittstelle_FME.png "Upload mit FME")
+![FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/images/Geodatenschnittstelle_FME.png "Upload mit FME")
 
 Beim Pfad auf die hochzuladende Datei muss der «MIME-Type» «application/octet-stream» augewählt werden.
+Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestellt.
+Der Basic Token muss wie folgt definiert werden:
+![Basic Token](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/images/FME_BasicToken.png "Basic Token")
 
