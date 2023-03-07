@@ -35,7 +35,7 @@ Eine Datei kann mit folgendem CURL-Befehl hochgeladen werden:
  ```
 curl 
 --location 
---request POST  http://www.energiestadtfinder.ch/bfe-ingest-api/api.php/file/upload 
+--request POST  https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/api.php/file/upload 
 --header "Authorization: Basic Token" 
 --form file=@D:\xyz\xyz.xtf 
 -x xyz.ch:8080 
