@@ -15,8 +15,8 @@ L'interface de géodonnées offre les possibilités suivantes :
 * L'interface de géodonnées est accessible à l'adresse suivante : [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=fr)
 * L'interface de géodonnées n'accepte que les fichiers avec l'extension ".xtf"
 * Le nom d'utilisateur et le mot de passe ainsi que le Basic Token pour l'autorisation sont mis à disposition par l'OFEN.
+* Les données Interlis devraient être validées sur [ilicop.ch](https://ilicop.ch/) avant le téléchargement.
 * Les données téléchargées sont lues quotidiennement et leur conformité au modèle est automatiquement vérifiée.
-* Les données Interlis peuvent être validées sur [ilicop.ch](https://ilicop.ch/)
  
 Si vous avez des questions ou des problèmes, créez un [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) ou envoyez un [E-mail](mailto:geoinformation@bfe.admin.ch)
 
