@@ -1,18 +1,18 @@
 # Documentation interface de géodonnées OFEN
-[![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR)
-[![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT)
+[![Documentazione](https://badgen.net/badge/Documentazione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
+[![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
 
 L'Office fédéral de l'énergie (OFEN) exploite l'[interface de données géographiques](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). L'interface de géodonnées permet de transmettre des données à l'OFEN Interlis par le moyen d'une interface utilisateur ou d'une interface de programmation. Les données sont enregistrées à l'OFEN et publiées sous forme de géodonnées agrégées. Cette documentation décrit les différentes possibilités de transmission.
 
 L'interface de géodonnées offre les possibilités suivantes :
 
-* [Upload manuel](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
-* [Upload avec CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
-* [Upload avec FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#u
+* [Upload manuel](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md#upload-manuel)
+* [Upload avec CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md#upload-avec-curl)
+* [Upload avec FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md#upload-avec-fme)
 
 
 ## Remarques
-* L'interface de géodonnées est accessible à l'adresse suivante : [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/)
+* L'interface de géodonnées est accessible à l'adresse suivante : [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=fr)
 * L'interface de géodonnées n'accepte que les fichiers avec l'extension ".xtf".
 * Le nom d'utilisateur et le mot de passe ainsi que le Basic Token pour l'autorisation sont mis à disposition par l'OFEN.
 * Les données téléchargées sont lues quotidiennement et leur conformité au modèle est automatiquement vérifiée.
@@ -34,7 +34,7 @@ Un fichier peut être téléchargé à l'aide de la commande CURL suivante :
  ```
 curl 
 --location 
---request POST  http://www.energiestadtfinder.ch/bfe-ingest-api/api.php/file/upload 
+--request POST  https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/api.php/file/upload 
 --header "Authorization: Basic Token" 
 --form file=@D:\xyz\xyz.xtf 
 -x xyz.ch:8080 
@@ -43,8 +43,8 @@ curl
 ```
 
 Les lignes suivantes doivent être adaptées :
-* --header : Insérer le jeton Basic personnel. Par exemple: : *"Authorization : Basic asajdhfkshjdjkfasdfaeghwf "*.
-* --form : Chemin vers le fichier à télécharger. Par exemple *file=@D:\users\daten\geodaten_bfe.xtf*.
+* --header : Insérer le Basic Token personnel. Par exemple: : *"Authorization : Basic asajdhfkshjdjkfasdfaeghwf "*.
+* --form : Chemin vers le fichier à télécharger. Par exemple *file=@D:\users\daten\geodaten_bfe.xtf*
 * -x : compléter les paramètres du proxy
 
 Le Basic Token pour l'autorisation est mis à disposition par l'OFEN.
