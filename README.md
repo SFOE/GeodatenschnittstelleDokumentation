@@ -2,7 +2,7 @@
 [![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR)
 [![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT)
 
-Das Bundesamt für Energie (BFE) betreibt die [Geodatenschnittstelle](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierter Geobasisdatensatz publiziert. Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
+Das Bundesamt für Energie (BFE) betreibt die [Geodatenschnittstelle](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierte Geodaten publiziert. Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 
 Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 
@@ -12,9 +12,11 @@ Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 
 
 ## Hinweise
-* Es werden nur Dateien mit der Endung «.xtf» akzeptiert.
-* Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft.
-* Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt.
+* Die Geodatenschnittstelle ist unter folgender Adresse erreichbar: [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/)
+* Die Geodatenschnittstelle akzeptiert nur Dateien mit der Endung «.xtf»
+* Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt
+* Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft
+* Die Interlis Daten können auf [ilicop.ch](https://ilicop.ch/) validiert werden
  
 
 Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
@@ -43,8 +45,8 @@ curl
 
 Folgende Zeilen müssen angepasst werden:
 * --header: Den persönlichen Basic Token einsetzen. Zum Beispiel: *"Authorization: Basic asajdhfkshjdjkfasdfaeghwf"*
-* --form: Pfad auf die hochzuladende Datei. Zum Beispiel file=@D:\users\daten\geodaten_bfe.xtf
-* -x: Proxyeinstellungen
+* --form: Pfad auf die hochzuladende Datei. Zum Beispiel *file=@D:\users\daten\geodaten_bfe.xtf*
+* -x: Proxyeinstellungen ergänzen
 
 Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestellt.
 
