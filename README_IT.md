@@ -1,18 +1,18 @@
 # Documentazione Interfaccia geodati UFE
-[![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
-[![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
+[![Documentation française](https://badgen.net/badge/Documentation/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
+[![Dokumentation Deutsch](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
 
-L'Ufficio federale dell'energia (UFE) gestisce l'[interfaccia geodati](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Attraverso l'interfaccia geodati, i dati possono essere trasmessi all'UFE Interlis tramite un'interfaccia utente o un'interfaccia di programmazione. I dati vengono memorizzati presso l'UFE e pubblicati come geodati aggregati. La presente documentazione descrive le varie opzioni di trasmissione.
+L'Ufficio federale dell'energia (UFE) gestisce l'[interfaccia geodati](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=it). Attraverso l'interfaccia geodati, i dati possono essere trasmessi all'UFE Interlis tramite un'interfaccia utente o un'interfaccia di programmazione. I dati vengono memorizzati presso l'UFE e pubblicati come geodati aggregati. La presente documentazione descrive le varie opzioni di trasmissione.
 
 L'interfaccia geodati offre le seguenti possibilità:
 
-* [Caricamento manuale](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
-* [Caricamento con CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
-* [Caricamento con FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-fme)
+* [Caricamento manuale](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md#caricamento-manuale)
+* [Caricamento con CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md#caricare-con-curl)
+* [Caricamento con FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md#caricare-con-fme)
 
 
 ## Note
-* L'interfaccia geodati è raggiungibile al seguente indirizzo: [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/)
+* L'interfaccia geodati è raggiungibile al seguente indirizzo: [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=it)
 * L'interfaccia geodati accetta solo file con estensione ".xtf"
 * Il nome utente e la password, nonché il token di base per l'autorizzazione, sono forniti dall'UFE.
 * I dati caricati vengono letti quotidianamente e controllati automaticamente per verificarne la conformità al modello.
@@ -34,7 +34,7 @@ Un file può essere caricato con il seguente comando CURL:
  ```
 curl 
 --location 
---request POST  http://www.energiestadtfinder.ch/bfe-ingest-api/api.php/file/upload 
+--request POST  https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/api.php/file/upload 
 --header "Authorization: Basic Token" 
 --form file=@D:\xyz\xyz.xtf 
 -x xyz.ch:8080 
