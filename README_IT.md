@@ -1,6 +1,7 @@
 # Documentazione Interfaccia geodati UFE
-[![Documentation française](https://badgen.net/badge/Documentation/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
-[![Dokumentation Deutsch](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
+[![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
+[![Documentation Française](https://badgen.net/badge/Documentation/Française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
+[![Documentazione Italiana](https://badgen.net/badge/Documentazione/Italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 
 L'Ufficio federale dell'energia (UFE) gestisce l'[interfaccia geodati](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=it). Attraverso l'interfaccia geodati, i dati in formato Interlis possono essere trasmessi all'UFE tramite un'interfaccia utente o un'interfaccia di programmazione. I dati vengono memorizzati presso l'UFE e pubblicati come geodati aggregati. La presente documentazione descrive le varie opzioni di trasmissione.
 
