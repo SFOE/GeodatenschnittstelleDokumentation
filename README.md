@@ -1,6 +1,6 @@
 # Dokumentation Geodatenschnittstelle BFE
-[![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
-[![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
+[![Documentation française](https://badgen.net/badge/Documentation/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
+[![Documentazione italiana](https://badgen.net/badge/Documentazione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 
 Das Bundesamt für Energie (BFE) betreibt die [Geodatenschnittstelle](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierte Geodaten publiziert. Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 
