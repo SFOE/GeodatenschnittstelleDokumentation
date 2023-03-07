@@ -2,7 +2,7 @@
 [![Documentazione](https://badgen.net/badge/Documentazione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 [![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
 
-L'Office fédéral de l'énergie (OFEN) exploite l'[interface de données géographiques](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). L'interface de géodonnées permet de transmettre des données à l'OFEN Interlis par le moyen d'une interface utilisateur ou d'une interface de programmation. Les données sont enregistrées à l'OFEN et publiées sous forme de géodonnées agrégées. Cette documentation décrit les différentes possibilités de transmission.
+L'Office fédéral de l'énergie (OFEN) exploite l'[interface de données géographiques](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=fr). L'interface de géodonnées permet de transmettre des données Interlis à l'OFEN par le moyen d'une interface utilisateur ou d'une interface de programmation. Les données sont enregistrées à l'OFEN et publiées sous forme de géodonnées agrégées. Cette documentation décrit les différentes possibilités de transmission.
 
 L'interface de géodonnées offre les possibilités suivantes :
 
@@ -13,7 +13,7 @@ L'interface de géodonnées offre les possibilités suivantes :
 
 ## Remarques
 * L'interface de géodonnées est accessible à l'adresse suivante : [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=fr)
-* L'interface de géodonnées n'accepte que les fichiers avec l'extension ".xtf".
+* L'interface de géodonnées n'accepte que les fichiers avec l'extension ".xtf"
 * Le nom d'utilisateur et le mot de passe ainsi que le Basic Token pour l'autorisation sont mis à disposition par l'OFEN.
 * Les données téléchargées sont lues quotidiennement et leur conformité au modèle est automatiquement vérifiée.
 * Les données Interlis peuvent être validées sur [ilicop.ch](https://ilicop.ch/)
@@ -50,7 +50,7 @@ Les lignes suivantes doivent être adaptées :
 Le Basic Token pour l'autorisation est mis à disposition par l'OFEN.
 
 ## Upload avec FME
-Un fichier peut être téléchargé dans FME avec un "HTTPCaller". Les paramètres suivants peuvent être utilisés à cet effet :
+Un fichier peut être chargé dans FME avec un "HTTPCaller". Les paramètres suivants peuvent être utilisés à cet effet :
 
 ![FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/images/Geodatenschnittstelle_FME.png "Upload avec FME")
 
