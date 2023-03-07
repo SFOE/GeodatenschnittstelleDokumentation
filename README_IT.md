@@ -16,7 +16,7 @@ L'interfaccia geodati offre le seguenti possibilità:
 * L'interfaccia geodati accetta solo file con estensione ".xtf"
 * Il nome utente e la password, nonché il token di base per l'autorizzazione, sono forniti dall'UFE.
 * I dati caricati vengono letti quotidianamente e controllati automaticamente per verificarne la conformità al modello.
-* I dati di Interlis possono essere convalidati su [ilicop.ch] (https://ilicop.ch/).
+* I dati di Interlis possono essere convalidati su [ilicop.ch](https://ilicop.ch/).
  
 
 Per domande o incertezze, creare un [issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) o scrivere un [email](mailto:geoinformation@bfe.admin.ch)
@@ -24,12 +24,12 @@ Per domande o incertezze, creare un [issue](https://github.com/SFOE/Geodatenschn
 ## Caricamento manuale
 
 1. Accedere all'interfaccia geodati con il proprio nome utente e la propria password.
-2. caricare il file con il drag&drop o selezionarlo facendo clic nella finestra. 3. caricare il file con il drag&drop o selezionarlo facendo clic nella finestra.
+2. caricare il file con il drag&drop o selezionarlo facendo clic nella finestra. 
 3. Tutti i file già caricati sono visibili nell'interfaccia utente e, se necessario, possono essere eliminati.
 
 
 ## Caricare con CURL
-I geodati possono essere caricati con CURL tramite un comando nella riga di comando. Ulteriori informazioni su CURL sono disponibili [qui] (https://curl.se/).
+I geodati possono essere caricati con CURL tramite un comando nella riga di comando. Ulteriori informazioni su CURL sono disponibili [qui](https://curl.se/).
 Un file può essere caricato con il seguente comando CURL:
  ```
 curl 
