@@ -2,9 +2,8 @@
 [![Version française](https://badgen.net/badge/Version/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR)
 [![Versione italiana](https://badgen.net/badge/Versione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT)
 
-Das Bundesamt für Energie (BFE) betreibt die Geodatenschnittstelle. Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierter Geobasisdatensatz publiziert.
+Das Bundesamt für Energie (BFE) betreibt die [Geodatenschnittstelle](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierter Geobasisdatensatz publiziert. Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 
-Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 
 * [Manueller Upload](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
