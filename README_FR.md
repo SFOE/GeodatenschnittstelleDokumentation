@@ -1,6 +1,7 @@
 # Documentation interface de géodonnées OFEN
-[![Documentazione](https://badgen.net/badge/Documentazione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 [![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
+[![Documentation Française](https://badgen.net/badge/Documentation/Française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
+[![Documentazione Italiana](https://badgen.net/badge/Documentazione/Italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 
 L'Office fédéral de l'énergie (OFEN) exploite l'[interface de données géographiques](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/?lang=fr). L'interface de géodonnées permet de transmettre des données Interlis à l'OFEN par le moyen d'une interface utilisateur ou d'une interface de programmation. Les données sont enregistrées à l'OFEN et publiées sous forme de géodonnées agrégées. Cette documentation décrit les différentes possibilités de transmission.
 
