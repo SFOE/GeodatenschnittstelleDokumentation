@@ -1,6 +1,7 @@
 # Dokumentation Geodatenschnittstelle BFE
-[![Documentation française](https://badgen.net/badge/Documentation/française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
-[![Documentazione italiana](https://badgen.net/badge/Documentazione/italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
+[![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
+[![Documentation Française](https://badgen.net/badge/Documentation/Française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
+[![Documentazione Italiana](https://badgen.net/badge/Documentazione/Italiana/green?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_IT.md)
 
 Das Bundesamt für Energie (BFE) betreibt die [Geodatenschnittstelle](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Über die Geodatenschnittstelle können dem BFE Interlis Daten über eine Benutzeroberfläche oder über eine Programmierschnittstelle übermittelt werden. Die Daten werden im BFE gespeichert und als aggregierte Geodaten publiziert. Diese Dokumentation beschreibt die verschiedenen Übermittlungsmöglichkeiten.
 
@@ -16,7 +17,7 @@ Die Geodatenschnittstelle bietet folgende Möglichkeiten:
 * Die Geodatenschnittstelle akzeptiert nur Dateien mit der Endung «.xtf»
 * Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt
 * Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft
-* Die Interlis Daten können auf [ilicop.ch](https://ilicop.ch/) validiert werden
+* Die Interlis Daten sollten vor dem Upload valididert werden. Die Daten können beispielsweise auf [ilicop.ch](https://ilicop.ch/) validiert werden
  
 
 Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
