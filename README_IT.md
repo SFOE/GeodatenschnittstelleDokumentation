@@ -4,34 +4,33 @@
 
 L'Ufficio federale dell'energia (UFE) gestisce l'[interfaccia geodati](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/). Attraverso l'interfaccia geodati, i dati possono essere trasmessi all'UFE Interlis tramite un'interfaccia utente o un'interfaccia di programmazione. I dati vengono memorizzati presso l'UFE e pubblicati come geodati aggregati. La presente documentazione descrive le varie opzioni di trasmissione.
 
-Die Geodatenschnittstelle bietet folgende Möglichkeiten:
+L'interfaccia geodati offre le seguenti possibilità:
 
-* [Manueller Upload](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
-* [Upload mit CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
-* [Upload mit FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-fme)
+* [Caricamento manuale](https://github.com/SFOE/GeodatenschnittstelleDokumentation#manueller-upload)
+* [Caricamento con CURL](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-curl)
+* [Caricamento con FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation#upload-mit-fme)
 
 
-## Hinweise
-* Die Geodatenschnittstelle ist unter folgender Adresse erreichbar: [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/)
-* Die Geodatenschnittstelle akzeptiert nur Dateien mit der Endung «.xtf»
-* Benutzername und Passwort sowie der Basic Token für die Autorisierung werden durch das BFE zur Verfügung gestellt
-* Die hochgeladenen Daten werden täglich eingelesen und automatisch auf Modellkonformität geprüft
-* Die Interlis Daten können auf [ilicop.ch](https://ilicop.ch/) validiert werden
+## Note
+* L'interfaccia geodati è raggiungibile al seguente indirizzo: [https://uvek-gis.admin.ch/BFE/GeodataIngestAPI](https://uvek-gis.admin.ch/BFE/GeodataIngestAPI/)
+* L'interfaccia geodati accetta solo file con estensione ".xtf"
+* Il nome utente e la password, nonché il token di base per l'autorizzazione, sono forniti dall'UFE.
+* I dati caricati vengono letti quotidianamente e controllati automaticamente per verificarne la conformità al modello.
+* I dati di Interlis possono essere convalidati su [ilicop.ch] (https://ilicop.ch/).
  
 
-Bei Fragen oder Unklarheiten erstellen Sie einen [Issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) oder schreiben Sie eine [E-Mail](mailto:geoinformation@bfe.admin.ch)
+Per domande o incertezze, creare un [issue](https://github.com/SFOE/GeodatenschnittstelleDokumentation/issues) o scrivere un [email](mailto:geoinformation@bfe.admin.ch)
 
-## Manueller Upload
+## Caricamento manuale
 
-1. Mit Benutzername und Passwort auf der Geodatenschnittstelle anmelden.
-2. Datei per Drag&Drop hochladen oder durch Klick in das Fenster auswählen.
-3. In der Benutzeroberfläche sind alle bereits hochgeladenen Dateien sichtbar und können bei Bedarf auch gelöscht werden.
+1. Accedere all'interfaccia geodati con il proprio nome utente e la propria password.
+2. caricare il file con il drag&drop o selezionarlo facendo clic nella finestra. 3. caricare il file con il drag&drop o selezionarlo facendo clic nella finestra.
+3. Tutti i file già caricati sono visibili nell'interfaccia utente e, se necessario, possono essere eliminati.
 
 
-## Upload mit CURL
-
-Die Geodaten können mit CURL über einen Befehl in der Kommandzeile hochgeladen werden. Weitere Informationen zu CURL finden Sie [hier](https://curl.se/).
-Eine Datei kann mit folgendem CURL-Befehl hochgeladen werden:
+## Caricare con CURL
+I geodati possono essere caricati con CURL tramite un comando nella riga di comando. Ulteriori informazioni su CURL sono disponibili [qui] (https://curl.se/).
+Un file può essere caricato con il seguente comando CURL:
  ```
 curl 
 --location 
@@ -43,21 +42,21 @@ curl
 -k
 ```
 
-Folgende Zeilen müssen angepasst werden:
-* --header: Den persönlichen Basic Token einsetzen. Zum Beispiel: *"Authorization: Basic asajdhfkshjdjkfasdfaeghwf"*
-* --form: Pfad auf die hochzuladende Datei. Zum Beispiel *file=@D:\users\daten\geodaten_bfe.xtf*
-* -x: Proxyeinstellungen ergänzen
+Le seguenti linee devono essere adattate:
+* --header: Inserire il Basic Token personale. Ad esempio: *"Autorizzazione: di base asajdhfkshjdjkfasdfaeghwf "*.
+* --form: Percorso del file da caricare. Ad esempio *file=@D:\users\data\geodata_bfe.xtf*
+* -x: Aggiungi impostazioni proxy
 
-Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestellt.
+Il Basic Token per l'autorizzazione è fornito dall'UFE.
 
-## Upload mit FME
-Eine Datei kann in FME mit einem «HTTPCaller» hochgeladen werden. Dazu können folgende Einstellungen verwendet werden:
+## Caricare con FME
+Un file può essere caricato in FME con un "HTTPCaller". A tale scopo si possono utilizzare le seguenti impostazioni:
 
 ![FME](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/images/Geodatenschnittstelle_FME.png "Upload mit FME")
 
-Beim Pfad auf die hochzuladende Datei muss der «MIME-Type» «application/octet-stream» augewählt werden.
-Der Basic Token für die Authorisierung wird durch das BFE zur Verfügung gestellt.
-Der Basic Token muss wie folgt definiert werden:
+Per il percorso del file da caricare occorre selezionare il "MIME-Type" "application/octet-stream".
+Il Basic Token per l'autorizzazione è fornito dall'UFE.
+Il Basic Token deve essere definito come segue:
 
 ![Basic Token](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/images/FME_BasicToken.png "Basic Token")
 
