@@ -1,3 +1,5 @@
+# ⚠️ This repository has been archived. Geodata delivery to the SFOE now goes through eGov.swiss. ⚠️
+
 # Dokumentation Geodatenschnittstelle BFE
 [![Dokumentation](https://badgen.net/badge/Dokumentation/Deutsch/red?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README.md)
 [![Documentation Française](https://badgen.net/badge/Documentation/Française/blue?icon=github)](https://github.com/SFOE/GeodatenschnittstelleDokumentation/blob/main/README_FR.md)
